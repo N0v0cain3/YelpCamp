@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>YelpCamp</title>
-        
-    </head>
-    <body>
+<%- include('partials/header') -%>
 
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<h1>Create a new campground</h1>
+<div class="container">
+    <div class="row">
+<h1 style="text-align:center;">Create a new campground</h1>
+<div style="width:30%; margin: 25px auto;">
 <form action="/campgrounds" method="POST">
-    <input type="text" name="name" placeholder="name">
-    <input tyoe="text" name="image" placeholder="image url">
-    <button>Submit</button>  
-
-    <a href="/campgrounds">Go back</a>
-
+    <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
+    <br>
+    <div class="form-group"> <input type="text" name="image" class="form-control" placeholder="image url"></div>
+    <br>
+   <div class="form-group"><button class="btn btn-lg btn-primary btn-block">Submit</button>  </div>
+   <a href="/campgrounds">Go back</a>
+</div>
+    
 </form>
+</div>  
+</div>>
 </body>
 </html>
