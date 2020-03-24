@@ -1,4 +1,4 @@
- var express=require('s');
+ var express=require('express');
  var mongoose=require('mongoose');
 var app=express();
 var mongoose=require('mongoose');
